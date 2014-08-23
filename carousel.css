@@ -1,0 +1,80 @@
+/**  carousel  */
+    .container {
+      width: 1000px;
+      height: 445px;
+      position: relative;
+      margin: 0 auto 20px;
+      -webkit-perspective: 51000px;
+         -moz-perspective: 51000px;
+           -o-perspective: 51000px;
+              perspective: 51000px;
+
+    }
+
+    #carousel {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transform: translateZ( -495px );
+         -moz-transform: translateZ( -495px );
+           -o-transform: translateZ( -495px );
+              transform: translateZ( -495px );
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 2s;
+         -moz-transition: -moz-transform 2s;
+           -o-transition: -o-transform 2s;
+              transition: transform 2s;
+    }
+
+/** the main element that displays the content on carousel */
+    #carousel figure {
+      display: block;
+      position: absolute;
+      width: 975px;
+      height: 420px;
+      left: 10px;
+      top: 10px;
+      border: 2px solid black;
+      backface-visibility:visible; 
+      line-height: 116px;
+      font-size: 80px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      margin: 0;      
+    }
+
+    #carousel figure:nth-child(1) { background: hsla(   0, 100%, 50%, 0.8 ); }
+    #carousel figure:nth-child(2) { background: hsla(  40, 100%, 50%, 0.8 ); }
+    #carousel figure:nth-child(3) { background: hsla(  80, 100%, 50%, 0.8 ); }
+    #carousel figure:nth-child(4) { background: hsla( 120, 100%, 50%, 0.8 ); }
+
+    #carousel figure:nth-child(1) {
+      -webkit-transform: rotateY(   0deg ) translateZ( 495px );
+         -moz-transform: rotateY(   0deg ) translateZ( 495px );
+           -o-transform: rotateY(   0deg ) translateZ( 495px );
+              transform: rotateY(   0deg ) translateZ( 495px );
+    }
+    #carousel figure:nth-child(2) {
+      -webkit-transform: rotateY(  90deg ) translateZ( 495px );
+         -moz-transform: rotateY(  90deg ) translateZ( 495px );
+           -o-transform: rotateY(  90deg ) translateZ( 495px );
+              transform: rotateY(  90deg ) translateZ( 495px );
+    }
+    #carousel figure:nth-child(3) {
+      -webkit-transform: rotateY(  180deg ) translateZ( 495px );
+         -moz-transform: rotateY(  180deg ) translateZ( 495px );
+           -o-transform: rotateY(  180deg ) translateZ( 495px );
+              transform: rotateY(  180deg ) translateZ( 495px );
+    }
+    #carousel figure:nth-child(4) {
+      -webkit-transform: rotateY( 270deg ) translateZ( 495px );
+         -moz-transform: rotateY( 270deg ) translateZ( 495px );
+           -o-transform: rotateY( 270deg ) translateZ( 495px );
+              transform: rotateY( 270deg ) translateZ( 495px );
+    }
+
+/**  carousel for albums closed*/    
